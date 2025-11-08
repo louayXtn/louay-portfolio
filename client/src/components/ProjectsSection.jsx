@@ -3,107 +3,21 @@ import { useState, useRef } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 
 const projects = [
-  {
-    id: 7,
-    title: "NauraCare",
-    category: "Healthcare SaaS",
-    description: "Hospital management platform with multi-role access, patient tracking, and billing systems.",
-    image: "/projects/project7.png",
-    video: "/projects/videos/nauracare-demo.mp4",
-    tags: ["React", "Node.js", "MongoDB", "Stripe", "JWT Auth"],
-    demoUrl: "https://nauracare.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/neuracare.git",
-    featured: true,
-    accentColor: "from-emerald-500 to-teal-600",
-    status: "Live",
-    highlights: ["Multi-role system", "Patient management", "Payment integration"]
-  },
+ 
   {
     id: 1,
-    title: "Vante & Co.",
+    title: "artisan societe",
     category: "E-commerce",
-    description: "Fashion marketplace with product recommendations and seamless checkout experience.",
-    image: "/projects/project1.png",
-    video: "/projects/videos/vante-demo.mp4",
-    tags: ["React", "Node.js", "Stripe", "Redis"],
-    demoUrl: "https://e-commerce-website-4w6a.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/E-commerce-website.git",
-    featured: true,
-    accentColor: "from-purple-500 to-indigo-600",
-    status: "Live",
-    highlights: ["Product catalog", "Shopping cart", "Payment processing"]
-  },
-  {
-    id: 2,
-    title: "Converse Pro",
-    category: "Real-time Communication",
-    description: "Chat platform with real-time messaging, media sharing, and user authentication.",
-    image: "/projects/project2.png",
-    video: "/projects/videos/converse-demo.mp4",
-    tags: ["Socket.IO", "MongoDB", "React", "WebRTC"],
-    demoUrl: "https://converse-pro-frontend.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/converse-pro.git",
-    featured: true,
-    accentColor: "from-blue-500 to-cyan-600",
-    status: "Live",
-    highlights: ["Real-time chat", "Media sharing", "User authentication"]
-  },
-  {
-    id: 3,
-    title: "Blogni AI",
-    category: "Artificial Intelligence",
-    description: "AI-powered content generation platform with multi-language support.",
-    image: "/projects/project3.png",
-    video: "/projects/videos/blogni-demo.mp4",
-    tags: ["Next.js", "Gemini AI", "Clerk Auth", "Redis"],
-    demoUrl: "https://blogni.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/Blogni.git",
-    accentColor: "from-amber-500 to-orange-600",
-    status: "Live",
-    highlights: ["AI content generation", "Multi-language", "User accounts"]
-  },
-  {
-    id: 4,
-    title: "Spendlix",
-    category: "FinTech",
-    description: "Financial tracking platform with expense management and budgeting features.",
-    image: "/projects/project4.png",
-    video: "/projects/videos/spendlix-demo.mp4",
-    tags: ["React", "Chart.js", "Node.js", "Firebase"],
-    demoUrl: "https://spendlix.vercel.app/login",
-    githubUrl: "https://github.com/Sahilmd01/Spendlix.git",
-    accentColor: "from-rose-500 to-pink-600",
-    status: "Live",
-    highlights: ["Expense tracking", "Data visualization", "Budget planning"]
-  },
-  {
-    id: 5,
-    title: "Eattoo",
-    category: "Food Tech",
-    description: "Food delivery platform with restaurant listings and order management.",
-    image: "/projects/project5.png",
-    video: "/projects/videos/eattoo-demo.mp4",
-    tags: ["React", "Redux", "Mapbox", "Stripe"],
-    demoUrl: "https://eattoo-food-delivery-website-frontend.onrender.com/",
-    githubUrl: "https://github.com/Sahilmd01/Eattoo-food-delivery-website.git",
+    description:  "Fullstack platform connecting local artisans with clients for handcrafted services and repairs.",
+    image: "/projects/projectN1.png",
+    video:" /projects/videos/artisan.mp4",
+    tags: ["React", "vite", "node.js","MongoDB", "express"],
+    demoUrl: "https://artisana-2.onrender.com/?i=1",
+    githubUrl: "https://github.com/louayXtn/artisana.git",
     accentColor: "from-violet-500 to-purple-600",
     status: "Live",
-    highlights: ["Restaurant listings", "Order system", "Location services"]
+    highlights: ["traditional product catalog", "order system", "lightweight interface"]
   },
-  {
-    id: 6,
-    title: "JobQue",
-    category: "HR Tech",
-    description: "Job matching platform with candidate tracking and application management.",
-    image: "/projects/project6.png",
-    video: "/projects/videos/jobque-demo.mp4",
-    tags: ["Next.js", "PostgreSQL", "Redis", "AI Integration"],
-    demoUrl: "#",
-    githubUrl: "#",
-    accentColor: "from-orange-500 to-red-600",
-    status: "Development",
-    highlights: ["Job matching", "Candidate tracking", "Application system"]
-  }
 ];
 
 const categoryColors = {
@@ -290,7 +204,7 @@ export const ProjectsSection = () => {
                       }`}>
                         {project.status}
                       </div>
-                    </div>
+                    </div>button
 
                     {/* Category Badge */}
                     <div className="absolute top-3 left-3">
@@ -306,14 +220,16 @@ export const ProjectsSection = () => {
                       animate={{ opacity: hoveredProject === project.id ? 1 : 0 }}
                     >
                       {/* Video Play Button */}
-                      <motion.button
+                      <motion.a
+                        // href={project.demoUrl}
+                        // target="_blank"
                         onClick={() => handleVideoPlay(project)}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="p-3 rounded-full backdrop-blur-sm border bg-white/20 text-white border-white/30 hover:bg-white/30 transition-all duration-300"
                       >
                         <Play size={20} />
-                      </motion.button>
+                      </motion.a>
                       
                       {/* Code Button */}
                       <motion.a
@@ -493,7 +409,7 @@ export const ProjectsSection = () => {
               </motion.a>
               
               <motion.a
-                href="https://github.com/sahilmd01"
+                href="https://github.com/louayXtn"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

@@ -72,7 +72,7 @@ export const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('https://formspree.io/f/xwpbojaj', {
+      const response = await fetch('https://formspree.io/f/manlrkqy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ export const ContactSection = () => {
     } catch (error) {
       toast({
         title: "Oops! Something went wrong",
-        description: "Please try again or email me directly at codewithkinu@gmail.com",
+        description: "Please try again or email me directly at zentaxcode@gmail.com",
         variant: "destructive"
       });
     } finally {
@@ -133,10 +133,10 @@ export const ContactSection = () => {
                 <div>
                   <p className="text-xs sm:text-sm text-muted-foreground">Email</p>
                   <a
-                    href="mailto:codewithkinu@gmail.com"
+                    href="mailto:zentaxcode@gmail.com"
                     className="text-sm sm:text-base font-medium hover:text-primary transition-colors"
                   >
-                    codewithkinu@gmail.com
+                    zentaxcode@gmail.com
                   </a>
                 </div>
               </div>
@@ -148,10 +148,10 @@ export const ContactSection = () => {
                 <div>
                   <p className="text-xs sm:text-sm text-muted-foreground">Phone</p>
                   <a
-                    href="tel:+919315145594"
+                    href="tel:+21694643504"
                     className="text-sm sm:text-base font-medium hover:text-primary transition-colors"
                   >
-                    +91 9315145594
+                    +216 94 643 504
                   </a>
                 </div>
               </div>
@@ -163,7 +163,7 @@ export const ContactSection = () => {
                 <div>
                   <p className="text-xs sm:text-sm text-muted-foreground">Location</p>
                   <span className="text-sm sm:text-base font-medium">
-                    Bengaluru, Karnataka India
+                    Gabes, Tunisia
                   </span>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export const ContactSection = () => {
                   {
                     icon: Linkedin,
                     label: "LinkedIn",
-                    url: "https://www.linkedin.com/in/codewithkinu",
+                    url: "www.linkedin.com/in/louay-awadh-86b140342",
                   },
                   {
                     icon: Twitter,
@@ -186,12 +186,12 @@ export const ContactSection = () => {
                   {
                     icon: Github,
                     label: "GitHub",
-                    url: "https://github.com/Sahilmd01",
+                    url: "https://github.com/louayXtn",
                   },
                   {
                     icon: Instagram,
                     label: "Instagram",
-                    url: "https://www.instagram.com/dubbinut",
+                    url: "https://www.instagram.com/louayawadh/",
                   },
                 ].map((social, index) => (
                   <a

@@ -28,10 +28,10 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
   };
 
   const currentColors = colors[theme] || colors.dark;
-  const portfolioUrl = "sahilfullstackportfolio.netlify.app";
+  const portfolioUrl = "louayfullstackportfolio.onrender.com";
   const welcomeMessages = [
     "Crafting digital experiences",
-    "Software Engineer",
+    "web developer ",
     "Full-stack development"
   ];
 

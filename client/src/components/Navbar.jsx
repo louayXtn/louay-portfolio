@@ -25,7 +25,7 @@ const navItems = [
   { name: "Projects", href: "#projects", icon: Briefcase },
   { name: "Testimonials", href: "#testimonials", icon: MessageSquare },
   { name: "Contact", href: "#contact", icon: Mail },
-  { name: "Blog", href: "https://blogni.vercel.app", icon: BookOpen },
+  
 ];
 
 const ThemeToggle = () => {
@@ -148,7 +148,7 @@ export const Navbar = () => {
       >
         {/* GitHub Button */}
         <motion.a
-          href="https://github.com/sahilmd01" 
+          href="https://github.com/louayXtn" 
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -167,7 +167,7 @@ export const Navbar = () => {
 
         {/* LinkedIn Button */}
         <motion.a
-          href="https://linkedin.com/in/codewithkinu" 
+          href="www.linkedin.com/in/louay-awadh-86b140342" 
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -186,7 +186,7 @@ export const Navbar = () => {
 
         {/* YouTube Button */}
         <motion.a
-          href="https://www.youtube.com/@codewithkinu"
+          href="www.youtube.com/@zentaxCode"
           target="_blank"
           rel="noopener noreferrer"
           className={cn(

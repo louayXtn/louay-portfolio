@@ -9,25 +9,30 @@ export const HeroSection = () => {
   const [displayedCode, setDisplayedCode] = useState("");
 
   const codeSnippets = [
-    "import { FullStackDeveloper } from 'sahil.dev';",
-    "",
-    "const developer = new FullStackDeveloper({",
-    "  name: 'Sahil',",
-    "  stack: ['React', 'Next.js', 'Node.js', 'TypeScript'],",
-    "  focus: 'Building scalable web applications',",
-    "  status: 'Open to new opportunities'",
-    "});",
-    "",
-    "await developer.launchPortfolio();",
-    "// Featured: E-commerce, SaaS, Enterprise, Startup MVPs",
-    "",
-    "developer.connect();",
-    "console.log('🚀 Let's build something exceptional together!');"
-  ];
+  "import { FullStackDeveloper, Accountant } from 'zenatxCode.dev';",
+  "",
+  "const louay = new FullStackDeveloper({",
+  "  alias: 'zenatxCode',",
+  "  stack: ['React', 'Vite', 'Next.js', 'Express', 'MongoDB'],",
+  "  specialties: ['API security', 'workflow automation', 'multilingual UX'],",
+  "  languages: ['Arabic', 'French','english'],",
+  "});",
+  "",
+  "louay.addRole(new Accountant({",
+  "  domain: 'Accounting',",
+  "  expertise: ['Public Finance', 'Financial Analysis', 'Auditing'],",
+  "}));",
+  "",
+  "await louay.deployPortfolio();",
+  "// Featuring: SEO, 3D UI, secure backend, financial insight",
+  "",
+  "louay.connect();",
+  "console.log('📊 Built by zenatxCode — let’s collaborate!');"
+];
 
   const achievements = [
     { number: "3+", label: "Years in Production", icon: <Shield className="h-3 w-3" /> },
-    { number: "15+", label: "Projects Delivered", icon: <TrendingUp className="h-3 w-3" /> },
+    { number: "4+", label: "Projects Delivered", icon: <TrendingUp className="h-3 w-3" /> },
     { number: "100%", label: "Client Satisfaction", icon: <Award className="h-3 w-3" /> },
     { number: "∞", label: "Problems Solved", icon: <Zap className="h-3 w-3" /> }
   ];
@@ -55,7 +60,7 @@ export const HeroSection = () => {
 
   const handleViewResume = () => {
     // Open resume in new tab
-    window.open('/Sahil-resume.pdf', '_blank', 'noopener,noreferrer');
+    window.open('/louay-resume.pdf', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -98,20 +103,37 @@ export const HeroSection = () => {
       <div className="container max-w-7xl mx-auto w-full mt-16 sm:mt-0">
         <motion.div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-20" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.25, delayChildren: 0.5 } } }}>
           
-          <div className="flex-1 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+          <div className="flex-1  text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
             <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8 backdrop-blur-sm" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
               <Briefcase className="h-4 w-4" /> Currently Accepting new Opportunities
             </motion.div>
-
-            <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              <span className="block text-foreground">I'm Sahil</span>
-              <motion.span className="block bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2" animate={{ backgroundPosition: ['0%', '100%', '0%'] }} transition={{ duration: 8, repeat: Infinity }} style={{ backgroundSize: '200% 100%' }}>
-                Full-Stack Engineer
-              </motion.span>
-            </motion.h1>
-
-            <motion.p className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-2xl" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
+             <div className="flex ">
+              <motion.h1 className="flex text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
+                <div className="">
+                  <div>
+                    <span className="block text-foreground text-4xl sm:text-5xl">
+                  I'm <span className="font-bold text-primary">Louay</span>
+                  {/* <img src="/zcLogo.png" alt="logo" className="inline ml-10 w-25 h-25 object-cover relative z-10"/> */}
+                  <span className="block text-muted-foreground text-base mt-2">
+                    <span className="italic">Professionally known as_</span> <span className="text-primary text-2xl font-semibold">zenatxCode</span>
+                 </span>
+                </span>
+                <motion.span className="block bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2" animate={{ backgroundPosition: ['0%', '100%', '0%'] }} transition={{ duration: 8, repeat: Infinity }} style={{ backgroundSize: '200% 100%' }}>
+                  Full-Stack developer
+                </motion.span>
+                  </div>
+                </div>
+              </motion.h1>
+              
+              
+            </div>
+            {/* <motion.p className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-2xl" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
               I build <span className="text-primary font-semibold">high-performance web applications</span> that drive business growth. Specializing in React, Node.js, and scalable architecture for startups and enterprises.
+            </motion.p> */}
+            <motion.p className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-2xl" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
+              I build <span className="text-primary font-semibold">robust full-stack web applications</span> using React, Vite, Next.js, Express, and MongoDB.  
+              I'm passionate about <span className="text-primary font-semibold">backend security</span>, <span className="text-primary font-semibold">API protection</span>, and <span className="text-primary font-semibold">workflow automation</span>.  
+              I also bring a strong foundation in <span className="text-primary font-semibold">accounting and public finance</span>, allowing me to design smart, scalable systems with real-world business insight.
             </motion.p>
 
             <motion.div className="grid grid-cols-2 sm:grid-cols-4 gap-4 my-8" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
@@ -223,8 +245,8 @@ export const HeroSection = () => {
                 </motion.div>
                 
                 <motion.div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-background/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-border shadow-lg text-center" initial={{ scale: 0, y: 20 }} animate={{ scale: 1, y: 0 }} transition={{ delay: 2, type: "spring" }}>
-                  <div className="text-xs font-mono text-muted-foreground">Built with</div>
-                  <div className="text-sm font-bold text-foreground">Modern Tech</div>
+                  <div className="text-xs font-mono text-muted-foreground">Built by</div>
+                  <div className="text-sm font-bold text-foreground">zentaxCode</div>
                 </motion.div>
               </motion.div>
             </div>
@@ -241,6 +263,9 @@ export const HeroSection = () => {
           <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }} className="w-1 h-2 bg-primary rounded-full mt-2" />
         </motion.div>
       </motion.div>
+      {/* <div className="mt-6 text-xs text-muted-foreground text-center">
+  Crafted by <span className="text-primary font-semibold text-sm">zenatxCode</span> — Fullstack Developer & Analyst
+</div> */}
     </section>
   );
 };
