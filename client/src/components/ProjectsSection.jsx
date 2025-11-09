@@ -11,13 +11,32 @@ const projects = [
     description:  "Fullstack platform connecting local artisans with clients for handcrafted services and repairs.",
     image: "/projects/projectN1.png",
     video:" /projects/videos/artisan.mp4",
-    tags: ["React", "vite", "node.js","MongoDB", "express"],
-    demoUrl: "https://artisana-2.onrender.com/?i=1",
+    tags: ["React", "vite", "node.js","MongoDB", "express","netlify"],
+    demoUrl: "https://artisan-societe.netlify.app",
     githubUrl: "https://github.com/louayXtn/artisana.git",
     accentColor: "from-violet-500 to-purple-600",
     status: "Live",
     highlights: ["traditional product catalog", "order system", "lightweight interface"]
   },
+  {
+  id: 2,
+  title: "louayXtn portfolio",
+  category: "Personal Website",
+  description: "Professional portfolio showcasing fullstack development skills, project architecture, and deployment workflows.",
+  image: "/projects/projectN2.png",
+  video: "/projects/videos/portfolio.mp4",
+  tags: ["React", "Vite", "Tailwind CSS", "render"],
+  demoUrl: "https://louay-portfolio.onrender.com/",
+  githubUrl: "https://github.com/louayXtn/louay-portfolio.git",
+  accentColor: "from-cyan-500 to-blue-600",
+  status: "Live",
+  highlights: [
+    "customized branding and layout",
+    "SPA routing with Netlify",
+    "project cards with live demos and source code"
+  ]
+}
+
 ];
 
 const categoryColors = {
@@ -25,7 +44,7 @@ const categoryColors = {
   "E-commerce": "from-purple-500/20 to-indigo-600/20 text-purple-600 border-purple-500/30",
   "Real-time Communication": "from-blue-500/20 to-cyan-600/20 text-blue-600 border-blue-500/30",
   "Artificial Intelligence": "from-amber-500/20 to-orange-600/20 text-amber-600 border-amber-500/30",
-  "FinTech": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30",
+  "Personal Website": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30",
   "Food Tech": "from-violet-500/20 to-purple-600/20 text-violet-600 border-violet-500/30",
   "HR Tech": "from-orange-500/20 to-red-600/20 text-orange-600 border-orange-500/30"
 };

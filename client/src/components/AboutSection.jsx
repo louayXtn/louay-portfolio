@@ -49,7 +49,7 @@ export const AboutSection = () => {
 
 const tabContent = {
   personal: "I'm passionate about crafting digital solutions that solve real problems and inspire curiosity. Outside of coding, I enjoy exploring emerging technologies, contributing to open-source initiatives, and supporting fellow developers on their learning journeys.",
-  professional: "As a full-stack developer with hands-on experience in modern web technologies like React, Vite, Express, and MongoDB, I focus on building secure, scalable, and maintainable applications. I bring a multidisciplinary mindset that bridges technical development with business and financial analysis.",
+  professional: "As a full-stack web developer with practical experience in modern technologies like React, Vite, Express, and MongoDB, I specialize in building responsive, secure, and maintainable web applications. My unique background combines technical expertise with a strong foundation in business and financial analysis, as I currently study Accounting at university while also pursuing a BTS in IT Management. This multidisciplinary path empowers me to approach software development with both a strategic mindset and hands-on problem-solving skills, bridging the gap between technology and real-world business needs",
   approach: "I value clean, well-documented code, thorough testing, and user-centered design. My workflow emphasizes collaboration, agile principles, and continuous learning—always aiming to deliver thoughtful, efficient, and impactful solutions."
 };
 
