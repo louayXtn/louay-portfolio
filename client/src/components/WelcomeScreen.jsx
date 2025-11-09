@@ -28,7 +28,7 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
   };
 
   const currentColors = colors[theme] || colors.dark;
-  const portfolioUrl = "louayfullstackportfolio.onrender.com";
+  const portfolioUrl = "louay-portfolio.onrender.com/";
   const welcomeMessages = [
     "Crafting digital experiences",
     "web developer ",

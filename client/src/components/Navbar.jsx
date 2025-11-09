@@ -17,7 +17,6 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-
 const navItems = [
   { name: "Home", href: "#hero", icon: Home },
   { name: "About", href: "#about", icon: User },
@@ -167,7 +166,7 @@ export const Navbar = () => {
 
         {/* LinkedIn Button */}
         <motion.a
-          href="www.linkedin.com/in/louay-awadh-86b140342" 
+          href="https://www.linkedin.com/in/louay-awadh-86b140342" 
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -186,7 +185,7 @@ export const Navbar = () => {
 
         {/* YouTube Button */}
         <motion.a
-          href="www.youtube.com/@zentaxCode"
+          href="https://www.youtube.com/@zentaxCode"
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
