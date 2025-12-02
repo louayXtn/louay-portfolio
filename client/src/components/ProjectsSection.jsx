@@ -11,7 +11,7 @@ const projects = [
     description:  "Fullstack platform connecting local artisans with clients for handcrafted services and repairs.",
     image: "/projects/projectN1.png",
     video:" /projects/videos/artisan.mp4",
-    tags: ["React", "vite", "node.js","MongoDB", "express","netlify"],
+    tags: ["React", "vite", "node.js","MongoDB", "express","netlify","jwt","couldinary"],
     demoUrl: "https://artisan-societe.netlify.app",
     githubUrl: "https://github.com/louayXtn/artisana.git",
     accentColor: "from-violet-500 to-purple-600",
@@ -34,6 +34,24 @@ const projects = [
     "customized branding and layout",
     "SPA routing with Netlify",
     "project cards with live demos and source code"
+  ]
+},
+{
+  id: 3,
+  title: "MarketPlace",
+  category: "E-commerce",
+  description: "A sleek React/Next.js marketplace with product workflows, filters, and admin review. Reliable, transparent, and user‑friendly.",
+  image: "/projects/marketProject.png",
+  video: "#",
+  tags: ["next", "typescript", "Tailwind CSS", "Vercel", "Node.js", "MongoDB", "express", "imagekit.io", "jwt"],
+  demoUrl: "#",
+  githubUrl: "#",
+  accentColor: "from-cyan-500 to-blue-600",
+  status: "Coming Soon",
+  highlights: [
+    "Complete product workflow system",
+    "Smart category and price filters",
+    "Modern, responsive UI design"
   ]
 }
 

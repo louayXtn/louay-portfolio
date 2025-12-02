@@ -62,6 +62,7 @@ const skills = [
   { name: "JavaScript", level: 90, category: "frontend", icon: "javascript" },
   { name: "React", level: 90, category: "frontend", icon: "react" },
   { name: "Next.js", level: 75, category: "frontend", icon: "nextjs" },
+  { name: "TypeScript", level: 80, category: "frontend", icon: "typescript" },
   { name: "Tailwind CSS", level: 93, category: "frontend", icon: "tailwind" },
   { name: "SASS", level: 85, category: "frontend", icon: "sass" },
 
@@ -118,6 +119,7 @@ const iconImages = {
   nodejs: nodejsIcon,
   express: expressIcon,
   mongodb: mongodbIcon,
+  typescript: tsIcon,
   java: javaIcon,
   python: pythonIcon,
   git: gitIcon,
