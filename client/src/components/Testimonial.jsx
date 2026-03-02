@@ -15,11 +15,19 @@ export const TestimonialSection = () => {
       id: 1,
       name: "artisan societe",
       role: "General Manager",
-      content: `Working with Luay was smooth from day one. He not only delivered a comprehensive solution ahead of schedule but also communicated clearly throughout the project. It's rare to find a developer who understands both the technical and business aspects with such proficiency.`,
+      content: `Working with louay was smooth from day one. He not only delivered a comprehensive solution ahead of schedule but also communicated clearly throughout the project. It's rare to find a developer who understands both the technical and business aspects with such proficiency.`,
       rating: 5,
       image: "/testimonials/artisan.jpg"
     },
     // add more testimonials as needed
+    {
+      id: 2,
+      name: "sf9a storee",
+      role: " Manager",
+      content: `Louay is a highly skilled and dedicated developer. He delivered a marketplace project that exceeded our expectations in terms of functionality and design. His ability to understand our requirements and translate them into a user-friendly application was impressive. We look forward to working with him again on future projects.`,
+      rating: 5,
+      image: "/testimonials/avatar.png"
+    },
   ];
 
   useEffect(() => {

@@ -4,22 +4,9 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 
 const projects = [
  
+  
   {
-    id: 1,
-    title: "artisan societe",
-    category: "E-commerce",
-    description:  "Fullstack platform connecting local artisans with clients for handcrafted services and repairs.",
-    image: "/projects/projectN1.png",
-    video:" /projects/videos/artisan.mp4",
-    tags: ["React", "vite", "node.js","MongoDB", "express","netlify","jwt","couldinary"],
-    demoUrl: "https://artisan-societe.netlify.app",
-    githubUrl: "https://github.com/louayXtn/artisana.git",
-    accentColor: "from-violet-500 to-purple-600",
-    status: "Live",
-    highlights: ["traditional product catalog", "order system", "lightweight interface"]
-  },
-  {
-  id: 2,
+  id: 1,
   title: "louayXtn portfolio",
   category: "Personal Website",
   description: "Professional portfolio showcasing fullstack development skills, project architecture, and deployment workflows.",
@@ -37,23 +24,56 @@ const projects = [
   ]
 },
 {
-  id: 3,
-  title: "MarketPlace",
+  id: 2,
+  title: "sf9a storee",
   category: "E-commerce",
   description: "A sleek React/Next.js marketplace with product workflows, filters, and admin review. Reliable, transparent, and user‑friendly.",
   image: "/projects/marketProject.png",
   video: "#",
-  tags: ["next", "typescript", "Tailwind CSS", "Vercel", "Node.js", "MongoDB", "express", "imagekit.io", "jwt"],
-  demoUrl: "#",
-  githubUrl: "#",
+  tags: ["next", "typescript", "Tailwind CSS", "onrender", "Node.js", "MongoDB", "express", "imagekit.io", "jwt"],
+  demoUrl: "https://saf9a.onrender.com",
+  githubUrl: "https://github.com/louayXtn/saf9a-.git",
   accentColor: "from-cyan-500 to-blue-600",
-  status: "Coming Soon",
+  status: "Live",
   highlights: [
     "Complete product workflow system",
     "Smart category and price filters",
     "Modern, responsive UI design"
   ]
-}
+},
+{
+  id: 3,
+  title: "Elyssa school",
+  category: "Education",
+  description: "A modern school management system built with Next.js and Tailwind CSS.",
+  image: "/projects/elyssa.png",
+  video: "#",
+  tags: ["next", "typescript", "Tailwind CSS", "Node.js", "MongoDB", "express", "imagekit.io", "jwt"],
+  demoUrl: "#",
+  githubUrl: "#",
+  accentColor: "from-cyan-500 to-blue-600",
+  status: "coming soon",
+  highlights: [
+    "a comprehensive school management system",
+    " robust backend with Node.js and MongoDB",
+    "Modern, responsive UI design"
+  ]
+},
+{
+    id: 4,
+    title: "artisan societe",
+    category: "E-commerce",
+    description:  "Fullstack platform connecting local artisans with clients for handcrafted services and repairs.",
+    image: "/projects/projectN1.png",
+    video:" /projects/videos/artisan.mp4",
+    tags: ["React", "vite", "node.js","MongoDB", "express","netlify","jwt","couldinary"],
+    demoUrl: "https://artisan-societe.netlify.app",
+    githubUrl: "https://github.com/louayXtn/artisana.git",
+    accentColor: "from-violet-500 to-purple-600",
+    status: "offline",
+    highlights: ["traditional product catalog", "order system", "lightweight interface"]
+  },
+
 
 ];
 

@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /404
+
+# Sitemaps
+Sitemap: https://louayfullstack.onrender.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
