@@ -5,8 +5,8 @@ const SEO = ({
   description = "Portfolio of Louay Awadh, a full stack web developer specializing in React, Tailwind CSS, JavaScript, and modern web technologies.",
   name = "Louay Awadh",
   type = "website",
-  image = "https://louayfullstack.onrender.com/og-image.svg",
-  url = "https://louayfullstack.onrender.com/"
+  image = "https://louay-portfolio.onrender.com/og-image.svg",
+  url = "https://louay-portfolio.onrender.com/"
 }) => {
   return (
     <Helmet>

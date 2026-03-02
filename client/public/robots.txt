@@ -3,7 +3,7 @@ Allow: /
 Disallow: /404
 
 # Sitemaps
-Sitemap: https://louayfullstack.onrender.com/sitemap.xml
+Sitemap: https://louay-portfolio.onrender.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 0

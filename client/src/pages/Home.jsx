@@ -15,7 +15,7 @@ export const Home = () => {
       <SEO 
         title="Louay Awadh - Full Stack Developer | React & JavaScript Expert"
         description="Professional portfolio of Louay Awadh - Full Stack Developer specializing in React, JavaScript, Tailwind CSS, and modern web technologies. View projects and get in touch."
-        url="https://louayfullstack.onrender.com/"
+        url="https://louay-portfolio.onrender.com/"
       />
       {/* Theme Toggle */}
       {/* Background Effects */}
